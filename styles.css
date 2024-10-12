@@ -1,6 +1,7 @@
 body {
-    background-image: url(bg.gif);
-    background-color: black;
+    background-image: url(bg2.gif);
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -11,7 +12,7 @@ h1  {
 
 .black{
     padding: 2px 0px;
-    width: 900px;
+    width: 95vw;
     border: 1px outset rgb(128, 128, 128);
     background-color: rgba(0, 0, 0, 0.361);
     text-align: left;
@@ -27,7 +28,7 @@ h1  {
 
 @keyframes colorshift {
     from {color: rgb(249, 253, 255);}
-    to {color: rgb(220, 230, 233);}
+    to {color: rgb(170, 182, 185);}
 }
 
 @font-face {
@@ -36,10 +37,11 @@ h1  {
 }
 
 .main-text {
+    font-size: 70px;
     font-family: 'NewRomantics', sans-serif;
-    margin: 10px 30px;
+    margin: 220px 30px;
     animation-name: colorshift;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
@@ -61,7 +63,7 @@ a {
     color: rgb(157, 157, 157);
     background-color: transparent;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px 15px 10px 30px;
     transition: .3s ease all;
     display: inline-block;
@@ -93,19 +95,6 @@ p {
     font-size: 20px;
     margin: 10px 15px 10px 30px;
     transition: .3s ease all;
-}
-
-@keyframes moveright {
-    from {transform: translateX(0px);}
-    to {transform: translateX(175px);}
-}
-
-.moveside{
-    animation-name: moveright;
-    animation-timing-function: linear;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .top{
